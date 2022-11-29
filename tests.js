@@ -143,35 +143,70 @@
 
 // Exercise #11
 
-describe('isEven', () => {
+// describe('isEven', () => {
+//     it('should be a defined function', () => {
+//         expect(typeof isEven).toBe('function');
+//     })
+//     it('should return a boolean value when passed any number', () => {
+//         expect(typeof isEven(1)).toBe('boolean')
+//     })
+//     it('should return true when passed 2', () => {
+//         expect(isEven(2)).toBe(true)
+//     })
+//     it('should return true when passed -4', () => {
+//         expect(isEven(-4)).toBe(true)
+//     })
+//     it('should return false when passed 3', () => {
+//         expect(isEven(3)).toBe(false)
+//     })
+//     it('should return false when passed a non-numeric string like "banana"', () => {
+//         expect(isEven("banana")).toBe(false)
+//     })
+//     it('should return true when passed the number "8"', () => {
+//         expect(isEven("8")).toBe(true)
+//     })
+//     it('should return false when passed Infinity"', () => {
+//         expect(isEven(Infinity)).toBe(false)
+//     })
+//     it('should return false when passed a boolean value ' , () => {
+//         expect(isEven(true)).toBe(false)
+//     })
+//     it('should return false when passed no input value ' , () => {
+//         expect(isEven('')).toBe(false)
+//     })
+// })
+
+// Exercise #12
+
+describe('isVowel', () => {
     it('should be a defined function', () => {
-        expect(typeof isEven).toBe('function');
+        expect(typeof isVowel).toBe('function')
     })
-    it('should return a boolean value when passed any number', () => {
-        expect(typeof isEven(1)).toBe('boolean')
+    it('should return a boolean value', () => {
+        expect(typeof isVowel("str")).toBe('boolean')
     })
-    it('should return true when passed 2', () => {
-        expect(isEven(2)).toBe(true)
+    it('should return true when passed the letter "a"', () => {
+        expect(isVowel("a")).toBe(true)
     })
-    it('should return true when passed -4', () => {
-        expect(isEven(-4)).toBe(true)
+    it('should return true when passed the letter "A"', () => {
+        expect(isVowel("A")).toBe(true)
     })
-    it('should return false when passed 3', () => {
-        expect(isEven(3)).toBe(false)
+    it('should return false when passed the letter "y', () => {
+        expect(isVowel("y")).toBe(false)
     })
-    it('should return false when passed a non-numeric string like "banana"', () => {
-        expect(isEven("banana")).toBe(false)
+    it('should return false when passed a number as the input', () => {
+        expect(isVowel(4)).toBe(false);
     })
-    it('should return true when passed the number "8"', () => {
-        expect(isEven("8")).toBe(true)
+    it('should return false when passed a boolean value ' , () => {
+        expect(isVowel(true)).toBe(false)
     })
-    it('should return false when passed Infinity"', () => {
-        expect(isEven(Infinity)).toBe(false)
+    it('should return false when passed a string as input', () => {
+        expect(isVowel("hello world")).toBe(false);
     })
-    it('should return false when passed the boolean value ' , () => {
-        expect(isEven(true)).toBe(false)
+    it('should return false when passed the a non-vowel "banana', () => {
+        expect(isVowel("banana")).toBe(false)
     })
     it('should return false when passed no input value ' , () => {
-        expect(isEven('')).toBe(false)
+        expect(isVowel('')).toBe(false)
     })
-})
+});

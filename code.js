@@ -82,17 +82,57 @@
 // }
 
 // Refactored code:
-const isEven = (input) => {
-    let parsedInput = parseInt(input);
-    return parsedInput % 2 === 0;
+// const isEven = (input) => {
+//     let parsedInput = parseInt(input);
+//     return parsedInput % 2 === 0;
+// }
+//
+// console.log(isEven(2));
+// console.log( isEven(-4));
+// console.log(isEven(3));
+// console.log(isEven("banana"));
+// console.log(isEven("8"));
+// console.log(isEven(Infinity));
+// console.log(isEven(true));
+// console.log(isEven(false));
+// console.log(isEven());
+
+// const isVowel =(input)=>{
+//     if(input === "a" || input === "A"){
+//         return true;
+//     }else if(input === "e" || input === "E"){
+//         return true
+//     }
+//     else if(input === "i" || input === "I"){
+//         return true
+//     }
+//     else if(input === "o" || input === "U"){
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// }
+
+
+Refactored code:
+const isVowel =(input)=>{
+    if(input === "a" || input === "A"){
+        return true;
+    }else if(input === "e" || input === "E"){
+        return true
+    }
+    else if(input === "i" || input === "I"){
+        return true
+    }
+    else return input === "o" || input === "U";
 }
 
-console.log(isEven(2));
-console.log( isEven(-4));
-console.log(isEven(3));
-console.log(isEven("banana"));
-console.log(isEven("8"));
-console.log(isEven(Infinity));
-console.log(isEven(true));
-console.log(isEven(false));
-console.log(isEven());
+console.log(isVowel("a"));
+console.log(isVowel("A"));
+console.log(isVowel("y"));
+console.log(isVowel(4));
+console.log(isVowel(true));
+console.log(isVowel(false));
+console.log(isVowel("banana"));
+console.log(isVowel());
