@@ -13,3 +13,19 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+// Unit tests for the sayHello function
+describe('sayHello', () => {
+    it('should be a defined function', () => {
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should take in a string as an argument ', () => {
+        expect(typeof sayHello("Hello")).toBe("string");
+    });
+    it('should return a string that says "hello" to the input passed in', () => {
+        expect(sayHello("str")).toBe("Hello str");
+    });
+    it("should never return 'undefined' when called", () => {
+        expect(sayHello()).not.toBe(undefined);
+    });
+});
