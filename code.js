@@ -58,17 +58,41 @@
 // console.log(sayHello("Johnny"));
 // console.log(sayHello(typeof ([])));
 
-const isFive = (input) => {
-    if(input === 5 || input ==="5"){
-        return true;
-    }else{
-        return false;
-    }
+// const isFive = (input) => {
+//     if(input === 5 || input ==="5"){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+// console.log(isFive(5));
+// console.log(isFive(4));
+// console.log(isFive(6));
+// console.log(isFive("5"));
+// console.log(isFive("Five"));
+
+// const isEven = (input) => {
+//     let parsedInput = parseInt(input);
+//     if(parsedInput % 2 === 0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+// Refactored code:
+const isEven = (input) => {
+    let parsedInput = parseInt(input);
+    return parsedInput % 2 === 0;
 }
 
-
-console.log(isFive(5));
-console.log(isFive(4));
-console.log(isFive(6));
-console.log(isFive("5"));
-console.log(isFive("Five"));
+console.log(isEven(2));
+console.log( isEven(-4));
+console.log(isEven(3));
+console.log(isEven("banana"));
+console.log(isEven("8"));
+console.log(isEven(Infinity));
+console.log(isEven(true));
+console.log(isEven(false));
+console.log(isEven());

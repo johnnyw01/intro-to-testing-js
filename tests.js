@@ -127,18 +127,51 @@
 //Added, committed, and pushed work to GitHub.
 
 // Exercise #10
-describe('isFive', () => {
-    it('The function name "isFive" exists', () => {
-        expect(typeof isFive).toBe('function');
-    });
-    it('should return a boolean no matter what the input is', () => {
-        expect(typeof isFive(5)).toBe('boolean')
-    });
-    it('should return true when input is 5', () => {
-        expect(isFive(5)).toBe(true)
-    }); it('should return false when input is not 5', () => {
-        expect(isFive(!5)).toBe(false)
-    });
-});
+// describe('isFive', () => {
+//     it('The function name "isFive" exists', () => {
+//         expect(typeof isFive).toBe('function');
+//     });
+//     it('should return a boolean no matter what the input is', () => {
+//         expect(typeof isFive(5)).toBe('boolean')
+//     });
+//     it('should return true when input is 5', () => {
+//         expect(isFive(5)).toBe(true)
+//     }); it('should return false when input is not 5', () => {
+//         expect(isFive(!5)).toBe(false)
+//     });
+// });
 
 // Exercise #11
+
+describe('isEven', () => {
+    it('should be a defined function', () => {
+        expect(typeof isEven).toBe('function');
+    })
+    it('should return a boolean value when passed any number', () => {
+        expect(typeof isEven(1)).toBe('boolean')
+    })
+    it('should return true when passed 2', () => {
+        expect(isEven(2)).toBe(true)
+    })
+    it('should return true when passed -4', () => {
+        expect(isEven(-4)).toBe(true)
+    })
+    it('should return false when passed 3', () => {
+        expect(isEven(3)).toBe(false)
+    })
+    it('should return false when passed a non-numeric string like "banana"', () => {
+        expect(isEven("banana")).toBe(false)
+    })
+    it('should return true when passed the number "8"', () => {
+        expect(isEven("8")).toBe(true)
+    })
+    it('should return false when passed Infinity"', () => {
+        expect(isEven(Infinity)).toBe(false)
+    })
+    it('should return false when passed the boolean value ' , () => {
+        expect(isEven(true)).toBe(false)
+    })
+    it('should return false when passed no input value ' , () => {
+        expect(isEven('')).toBe(false)
+    })
+})
