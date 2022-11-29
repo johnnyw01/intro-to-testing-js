@@ -7,4 +7,4 @@ function helloWorld() {
 const sayHello = (str) =>{
     return ("Hello " + str);
 }
-console.log(sayHello("Jake"));
+console.log(sayHello("Jane"));
