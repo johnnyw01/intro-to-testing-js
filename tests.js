@@ -48,7 +48,7 @@
 //     });
 // });
 
-//Exercise #4
+// Exercise #4
 // describe('sayHello', () => {
 //     it('should be a defined function', () => {
 //         expect(typeof sayHello).toBe('function');
@@ -58,37 +58,33 @@
 //         return ""
 //     });
 //     it('should return "Hello" concatenated with the string passed in as an argument', () => {
-//         expect(sayHello("Alex")).toBe("Hello Alex!")
-//         return ("Hello Alex!");
+//         expect(sayHello("Alex")).toBe("Hello, Alex!")
+//         return ("Hello, Alex!");
 //     });
 //     it('should return "Hello Alex" if `input is === Alex`, else should return "Hello Jane"', () => {
-//         expect(sayHello("Alex ")).toBe("Hello Alex!")
-//         if(sayHello("=== Alex")){
-//         return ("Hello Alex!")}
-//         else{ return ('Hello Jane!')}
+//         expect(sayHello("Alex")).toBe("Hello, Alex!")
 //     });
 // });
 
 //Exercise #5
 
-describe('sayHello', () => {
-    it('should be a defined function', () => {
-        expect(typeof sayHello).toBe('function');
-    });
-    it('should return a string when called', () => {
-        expect(typeof sayHello()).toBe('string')
-        return ""
-    });
-    it('should return "Hello" concatenated with the string passed in as an argument', () => {
-        expect(sayHello("Pat")).toBe("Hello Pat!")
-        return ("Hello Pat!");
-    });
-    it('should return "Hello Pat" if `input is === Pat`', () => {
-        expect(sayHello("Pat")).toBe("Hello Pat!")
-        if(sayHello("=== Pat")){
-            return ('Hello Pat!')}
-    });
-});
+// describe('sayHello', () => {
+//     it('should be a defined function', () => {
+//         expect(typeof sayHello).toBe('function');
+//     });
+//     it('should return a string when called', () => {
+//         expect(typeof sayHello()).toBe('string')
+//         return ""
+//     });
+//     it('should return "Hello" concatenated with the string passed in as an argument', () => {
+//         expect(sayHello("Pat")).toBe("Hello, Pat!")
+//         return ("Hello, Pat!");
+//     });
+//     it('should return "Hello Pat" if "input is === Pat"', () => {
+//         expect(sayHello("Pat")).toBe("Hello, Pat!")
+//         return ('Hello, Pat!')
+//     });
+// });
 
 
 //Exercise #6
@@ -102,4 +98,30 @@ describe('sayHello', () => {
 // }
 
 // Exercise #7
+//Added, committed, and pushed work to GitHub.
+
+// Exercise #8
+// describe('sayHello', () => {
+//     it('should be a defined function', () => {
+//         expect(typeof sayHello).toBe('function');
+//     });
+//     it('should return a string when called', () => {
+//         expect(typeof sayHello()).toBe('string')
+//         return ""
+//     });
+//     it('should return "Hello, World!" when "World" is passed in as an argument', () => {
+//         expect(sayHello("World")).toBe("Hello, World!")
+//         return("Hello, World!")
+//     });
+//     it('should return "Hello, World!" if input === true', () => {
+//         expect(sayHello(true)).toBe("Hello, World!")
+//         return("Hello, World!")
+//     });
+//     it('should return "Hello, World!" if input === false', () => {
+//         expect(sayHello(false)).toBe("Hello, World!")
+//         return("Hello, World!")
+//     });
+// });
+
+// Exercise #9
 //Added, committed, and pushed work to GitHub.
